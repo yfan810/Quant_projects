@@ -1,0 +1,51 @@
+name: quant
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - statsmodels>=0.14
+  - scikit-learn>=1.3
+  - pyarrow      
+  - openpyxl     
+  - matplotlib>=3.7
+
+  - linearmodels>=5.3    # panel/regression tools – Project 3
+
+  - yfinance>=0.2
+  - requests
+  - beautifulsoup4
+
+  # ---- Optimization for Project 5 (include common conic solvers) ----
+  - cvxpy>=1.4
+  - ecos>=2.0
+  - osqp>=0.6
+  - scs>=3.2
+
+  # ---- NLP / Alt-data (Project 4) ----
+  - nltk
+  - transformers>=4.40    
+  - pytorch             
+  - sentencepiece      
+
+  # ---- RL / LOB simulation (Project 6) ----
+  - stable-baselines3>=2.3
+
+  - gymnasium>=0.29
+  - shimmy
+
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - numba
+  - tqdm
+
+  - pip:
+      - vaderSentiment>=3.3
+      - plotly>=5.20
+      - arch>=6.0
